@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/root"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/transparent_black_85">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dip"
+        android:layout_centerInParent="true"
+        android:fitsSystemWindows="true"
+        android:saveEnabled="true"
+        >
+
+        <com.daren.videorecord.SurfaceVideoView
+            android:id="@+id/videoview"
+            android:layout_width="match_parent"
+            android:layout_height="300dip"
+            android:layout_centerInParent="true"
+            android:fitsSystemWindows="true"
+            android:saveEnabled="true"/>
+
+        <Chronometer
+            android:id="@+id/chronometer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/transparent"
+            android:gravity="center_horizontal"
+            android:textColor="#FFF"/>
+    </RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/play_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:contentDescription="@string/imageview_content_description"
+        android:src="@drawable/play_big"
+        android:visibility="gone"/>
+
+    <com.daren.videorecord.LoadingCircleView
+        android:id="@+id/loadingView"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"/>
+
+
+    <!--<ProgressBar-->
+    <!--android:id="@+id/loading"-->
+    <!--style="?android:attr/progressBarStyle"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_centerInParent="true" />-->
+
+</RelativeLayout>
