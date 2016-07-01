@@ -8,7 +8,7 @@ def projectName = "videorecord"
 def projectDesc = "基于秒拍的视频录制和视频播放库."
 def projectGroup = "com.daren"
 group = projectGroup
-version = "1.0.0"
+version = "1.0.1"
 
 android {
     compileSdkVersion 24
@@ -19,7 +19,7 @@ android {
         minSdkVersion 14
         targetSdkVersion 22
         versionCode 1
-        versionName "1.0"
+        versionName "1.0.1"
     }
     buildTypes {
         release {
