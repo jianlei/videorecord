@@ -1,5 +1,14 @@
 ### VideoRecord
 
+引用：
+
+Gradle
+
+```
+compile 'com.daren:videorecord:1.0.0'
+```
+
+
 1.使用VideoInit.init(context)方法进行初始化操作，
 包括初始化秒拍sdk，以及默认的视频存储目录，在／sdcard/DCIM/Camera/Daren_Video/下
 
