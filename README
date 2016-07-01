@@ -1,0 +1,30 @@
+### VideoRecord
+
+1.使用VideoInit.init(context)方法进行初始化操作，
+包括初始化秒拍sdk，以及默认的视频存储目录，在／sdcard/DCIM/Camera/Daren_Video/下
+
+2.调用录制视频界面：
+
+```
+Intent intent = new Intent(this, MediaRecorderActivity.class);
+startActivityForResult(intent,RECORD_REQUEST_CODE);
+
+```
+获取拍照成功之后返回值：
+
+```
+@Override
+protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+   super.onActivityResult(requestCode, resultCode, data);
+   if (requestCode == RECORD_REQUEST_CODE && resultCode == RESULT_OK){
+       String videoPath = data.getStringExtra(VConstant.RECORD_VIDEO_PATH);
+   }
+}
+```
+3.播放视频，目前只支持mp4和3gp的视频。
+
+```
+  Intent intent = new Intent(this, VideoPlayerActivity.class);
+  intent.putExtra(VConstant.RECORD_VIDEO_PATH,videoPath);
+```
+其中videoPath可以是本地地址和服务器地址，如果是服务器地址，会先下载再播放。
