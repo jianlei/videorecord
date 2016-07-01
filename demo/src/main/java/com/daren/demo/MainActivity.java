@@ -39,6 +39,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
             Intent intent = new Intent(this, VideoPlayerActivity.class);
             intent.putExtra(VConstant.RECORD_VIDEO_PATH,videoPath);
+            startActivity(intent);
         }
     }
 
