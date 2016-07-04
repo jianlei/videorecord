@@ -5,7 +5,7 @@
 Gradle
 
 ```
-compile 'com.daren:videorecord:1.0.0'
+compile 'com.daren:videorecord:1.0.1'
 ```
 
 
