@@ -8,18 +8,18 @@ def projectName = "videorecord"
 def projectDesc = "基于秒拍的视频录制和视频播放库."
 def projectGroup = "com.daren"
 group = projectGroup
-version = "1.0.1"
+version = "1.0.2"
 
 android {
-    compileSdkVersion 24
-    buildToolsVersion "24.0.0"
+    compileSdkVersion 23
+    buildToolsVersion "23.0.1"
 
     defaultConfig {
 //        applicationId "com.daren.videorecord"
         minSdkVersion 14
         targetSdkVersion 22
         versionCode 1
-        versionName "1.0.1"
+        versionName "1.0.2"
     }
     buildTypes {
         release {
@@ -32,7 +32,7 @@ android {
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     testCompile 'junit:junit:4.12'
-    compile 'com.android.support:appcompat-v7:24.0.0'
+    provided 'com.android.support:appcompat-v7:23.1.1'
     compile 'com.google.code.gson:gson:2.3.+'
 
 }
